@@ -184,7 +184,7 @@ header.shrink {
     }
 
     .hero-content {
-        padding: 30px; /* Smaller padding for mobile */
+        padding: 0px; /* Smaller padding for mobile */
         border-radius: 15px;
     }
 
@@ -204,6 +204,7 @@ header.shrink {
 
 @media (max-width: 480px) {
     .hero {
+        margin-top: 50px;
         padding: 80px 20px;
         height: auto;
         background-size: cover;
