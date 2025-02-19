@@ -22,5 +22,5 @@ This is the official website for **Big Willie Style Inc.**, a logistics and frei
    git clone https://github.com/bekhruzakhmadjanov/Logistic.git
 2. Open the index.html file in any browser.
 
-🌍 Deployment
+## 🌍 Deployment  
 The site is hosted on GitHub Pages and updates automatically when changes are pushed to the repository.
