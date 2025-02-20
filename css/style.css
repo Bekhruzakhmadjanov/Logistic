@@ -33,7 +33,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #1d0469;
+    background-color: #8d8d8d;
     z-index: 1000;
     transition: all 0.3s ease-in-out; /* Smooth animation */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -42,7 +42,7 @@ header {
 /* When the user scrolls, shrink the navbar */
 header.shrink {
     padding: 10px 10%;
-    background-color: #1d0469;
+    background-color: #8d8d8d;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
 }
 
@@ -52,7 +52,7 @@ header.shrink {
     justify-content: space-between;
     align-items: center;
     padding: 5px 10%;
-    background-color: #1d0469;
+    background-color: #8d8d8d;
 }
 
 .logo img {
@@ -104,7 +104,7 @@ header.shrink {
         position: absolute;
         top: 80px;
         right: 0;
-        background-color: #1d0469;
+        background-color: #8d8d8d;
         width: 100%;
         text-align: center;
         z-index: 100;
@@ -128,7 +128,7 @@ header.shrink {
     padding: 150px 50px;
     padding-left: 10%;
     background: url('../images/hero.jpg') no-repeat center center;
-    color: #1d0469;
+    color: #343434;
     display: flex;
     justify-content: left;
     align-items: center;
@@ -168,7 +168,7 @@ header.shrink {
 }
 
 .cta-button:hover {
-    background-color: #1d0469;
+    background-color: #343434;
     color: #fff;
     border: none;
 }
@@ -243,7 +243,7 @@ header.shrink {
     text-align: center;
     margin-bottom: 50px;
     font-size: 2.5rem;
-    color: #1d0469;
+    color: #343434;
 }
 
 
@@ -335,7 +335,7 @@ header.shrink {
 .features h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #1d0469;
+    color: #343434;
     font-weight: bold;
 }
 
@@ -368,7 +368,7 @@ header.shrink {
 }
 
 .features-list li strong {
-    color: #1d0469;
+    color: #343434;
     margin-left: 10px;
 }
 
@@ -381,7 +381,7 @@ header.shrink {
 .features-list li::before {
     content: "✔";
     font-size: 1.5rem;
-    color: #1d0469;
+    color: #343434;
     margin-right: 10px;
 }
 
@@ -418,7 +418,7 @@ header.shrink {
 .featured-services h2 {
     font-size: 2.5rem;
     margin-bottom: 30px;
-    color: #1d0469;
+    color: #343434;
 }
 
 .home-services-intro {
@@ -462,7 +462,7 @@ header.shrink {
 .service-card h3 {
     font-size: 1.3rem;
     padding: 15px 10px;
-    color: #1d0469;
+    color: #343434;
     margin: 0;
     height: 110px;
     border-radius: 10px;
@@ -542,7 +542,7 @@ header.shrink {
 .service-description h2 {
     font-size: 2rem;
     margin-bottom: 15px;
-    color: #1d0469;
+    color: #343434;
 }
 
 .service-description p {
@@ -606,7 +606,7 @@ header.shrink {
     font-size: 2.5rem;
     margin-bottom: 40px;
     font-weight: bold;
-    color: #1d0469;
+    color: #343434;
 }
 
 .contact-intro p {
@@ -641,7 +641,7 @@ header.shrink {
     margin-bottom: 20px;
     font-size: 2rem;
     font-weight: bold;
-    color: #1d0469;
+    color: #343434;
 }
 
 /* Form Group Styling */
@@ -672,7 +672,7 @@ button.cta-button {
     width: 100%;
     padding: 15px;
     margin-top: 20px;
-    background-color: #1d0469;
+    background-color: #343434;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -694,7 +694,7 @@ button.cta-button:hover {
 }
 
 .contact-info-container .contact-details a {
-    color: #1d0469;
+    color: #343434;
     text-decoration: none;
 }
 
@@ -712,7 +712,7 @@ button.cta-button:hover {
     margin-bottom: 15px;
     font-size: 1.5rem;
     font-weight: bold;
-    color: #1d0469;
+    color: #343434;
 }
 
 .map-container iframe {
@@ -760,7 +760,7 @@ button.cta-button:hover {
 
 /* General Footer Styling */
 .footer {
-    background-color: #1d0469;
+    background-color: #8d8d8d;
     color: #fff;
     padding: 40px 20px 20px;
     text-align: center;
@@ -933,7 +933,7 @@ button.cta-button:hover {
 }
 
 .modal-content::-webkit-scrollbar-thumb {
-    background: #1d0469; /* Odikey theme color */
+    background: #8d8d8d; /* Odikey theme color */
     border-radius: 10px; /* Rounded scrollbar */
 }
 
@@ -944,7 +944,7 @@ button.cta-button:hover {
 /* For Firefox (Limited Support) */
 .modal-content {
     scrollbar-width: thin;
-    scrollbar-color: #1d0469 #f1f1f1; /* Thumb and track colors */
+    scrollbar-color: #8d8d8d #f1f1f1; /* Thumb and track colors */
 }
 
 
@@ -953,7 +953,7 @@ button.cta-button:hover {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: #1d0469;
+    background-color: #8d8d8d;
     color: white;
     text-align: center;
     padding: 15px;
@@ -967,7 +967,7 @@ button.cta-button:hover {
 
 .cookie-consent-banner button {
     background-color: #ffca28;
-    color: #1d0469;
+    color: #8d8d8d;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
