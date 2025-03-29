@@ -185,13 +185,19 @@
             <!-- Footer Quick Links -->
             <div class="footer-links">
                 <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="#hero">Home</a></li>
-                    <li><a href="#about-us">About Us</a></li>
-                    <li><a href="#services">Our Services</a></li>
-                    <li><a href="#features">Features</a></li>
-                    <!-- <li><a href="#contact-us">Contact Us</a></li> -->
-                </ul>
+                <div class="links-columns">
+                    <ul>
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/index.html#about-us">About Us</a></li>
+                        <li><a href="/index.html#services">Our Services</a></li>
+                        <li><a href="/index.html#features">Features</a></li>
+                        <li><a href="/index.html#contact-us">Contact Us</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/pages/disclaimer.html">Disclaimer</a></li>
+                        <li><a href="/pages/privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
             </div>
 
             <!-- Contact Information -->
@@ -227,8 +233,8 @@
         </div>
         <div class="footer-bottom">
             <p>&copy; 2025 Big Willie Style Inc. All rights reserved. | 
-                <a href="#" onclick="openModal('disclaimerModal', event)">Disclaimer</a> | 
-                <a href="#" onclick="openModal('privacyModal', event)">Privacy Policy</a>
+                <a href="/pages/disclaimer.html">Disclaimer</a> | 
+                <a href="/pages/privacy.html">Privacy Policy</a>
             </p>
         </div>
     </footer>
@@ -379,12 +385,45 @@
     <script src="js/script.js"></script>
 
 
-    <!-- Cookie Consent Banner -->
-    <div id="cookieConsent" class="cookie-consent-banner">
-        <p>We use cookies to enhance your experience. By continuing to visit this site, you accept our <a href="#" onclick="openModal('privacyModal', event)">privacy policy</a>.</p>
-        <button onclick="acceptCookies()">Accept</button>
+    <!-- Modern Cookie Consent Banner -->
+    <div id="cookieConsent" class="consent-container">
+        <div class="consent-box">
+            <h2>We value your privacy</h2>
+            <p>
+                We use cookies to enhance your browsing experience, serve personalised ads or content, and analyse our traffic.
+            </p>
+            <p>If you agree on:</p>
+            <ul>
+                <li><strong>Marketing</strong> – browsing data will be used to serve you relevant promotions.</li>
+                <li><strong>Functional</strong> – ensures you have a better experience of our website.</li>
+            </ul>
+            <p>
+                By clicking “I Consent”, you agree to our usage of cookies, <a href="/pages/privacy.html">privacy policy</a>,
+                <a href="/pages/disclaimer.html">disclaimer</a>, and SMS Communication Policy.
+            </p>
+        
+            <div class="consent-switches">
+                <label>
+                    <input type="checkbox" id="privacyCheck" />
+                    Privacy Policy
+                </label>
+                <label>
+                    <input type="checkbox" id="disclaimerCheck" />
+                    Disclaimer
+                </label>
+                <label>
+                    <input type="checkbox" id="smsCheck" />
+                    SMS Communication Policy
+                </label>
+            </div>
+        
+            <div class="consent-buttons">
+                <button onclick="rejectConsent()">I REJECT</button>
+                <button onclick="submitConsent()">I CONSENT</button>
+            </div>
+        </div>
     </div>
-
+  
 
 </body>
 </html>

@@ -97,44 +97,35 @@ window.addEventListener("scroll", function () {
 
 
 // Function to set a cookie
-function setCookie(name, value, days) {
-    const date = new Date();
-    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000)); // Convert days to milliseconds
-    const expires = "expires=" + date.toUTCString();
-    document.cookie = name + "=" + value + ";" + expires + ";path=/";
-}
-
-// Function to get a cookie
-function getCookie(name) {
-    const decodedCookie = decodeURIComponent(document.cookie);
-    const cookies = decodedCookie.split(';');
-    name = name + "=";
-    for (let i = 0; i < cookies.length; i++) {
-        let cookie = cookies[i].trim();
-        if (cookie.indexOf(name) === 0) {
-            return cookie.substring(name.length, cookie.length);
-        }
-    }
-    return "";
-}
-
-// Function to check if the user has already accepted cookies
-function checkCookieConsent() {
-    const consent = getCookie("cookieConsent");
-    
-    if (!consent) { 
-        // Only show the banner if no consent cookie exists
-        document.getElementById("cookieConsent").style.display = "block";
-    }
-}
-
-// Function to accept cookies and hide the banner
-function acceptCookies() {
-    setCookie("cookieConsent", "accepted", 365); // Save consent for 1 year
-    document.getElementById("cookieConsent").style.display = "none"; // Hide the cookie banner
-}
+function submitConsent() {
+    const privacy = document.getElementById('privacyCheck').checked;
+    const disclaimer = document.getElementById('disclaimerCheck').checked;
+    const sms = document.getElementById('smsCheck').checked;
+  
+    // if (!privacy || !disclaimer || !sms) {
+    //   alert("Please check all boxes to continue.");
+    //   return;
+    // }
+  
+    setCookie("cookieConsent", "accepted", 365);
+    document.getElementById("cookieConsent").style.display = "none";
+  }
+  
+  function rejectConsent() {
+    setCookie("cookieConsent", "rejected", 365);
+    document.getElementById("cookieConsent").style.display = "none";
+  }
+  
+  function setCookie(name, value, days) {
+    const expires = new Date(Date.now() + days * 864e5).toUTCString();
+    document.cookie = name + "=" + encodeURIComponent(value) + "; expires=" + expires + "; path=/";
+  }
+  
 
 // Run check on page load
-window.onload = function() {
-    checkCookieConsent();
-};
+window.onload = function () {
+    if (document.cookie.indexOf("cookieConsent") === -1) {
+      document.getElementById("cookieConsent").style.display = "flex";
+    }
+  };
+  
