@@ -17,6 +17,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     background-color: #fff;
+    margin-top: 3lh;
 }
 
 img {
@@ -582,12 +583,88 @@ header.shrink {
 
 /***************************** CONTACT US ***************************/
 
+
+/* Home page styling */
+.contact-redirect-highlight {
+    background: linear-gradient(to right, #f9f9f9, #e0e0e0);
+    padding: 60px 30px;
+    margin: 40px 40px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 0.6s ease-in-out;
+    transition: transform 0.3s ease;
+}
+
+.contact-redirect-highlight:hover {
+    transform: scale(1.02);
+}
+
+.contact-redirect-highlight h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #343434;
+}
+
+.contact-redirect-highlight p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.contact-link-button {
+    padding: 15px 30px;
+    font-size: 1rem;
+    background-color: white;
+    color: #343434;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-link-button:hover {
+    background-color: #343434;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-redirect-highlight h2 {
+        font-size: 2rem;
+    }
+
+    .contact-redirect-highlight p {
+        font-size: 1rem;
+    }
+
+    .contact-link-button {
+        font-size: 0.95rem;
+        padding: 12px 25px;
+    }
+}
+
+
+
 /* General Section Styling */
 .contact-us-body {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    gap: 1.5lh;
 }
 
 .contact-intro, .contact-form-info, .additional-contact-info {
@@ -618,11 +695,11 @@ header.shrink {
 
 /* Contact Form and Information Section */
 .contact-form-info {
-    width: 50%;
+    width: 70%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    gap: 5rem;
+    gap: 3rem;
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -718,14 +795,14 @@ button.cta-button:hover {
 
 .map-container iframe {
     width: 100%;
-    height: 400px;
+    height: 300px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border: none;
 }
 
 /* Responsive Adjustments */
-@media (max-width: 768px) {
+@media (max-width: 968px) {
     .contact-form-info {
         flex-direction: column;
         padding: 20px;
