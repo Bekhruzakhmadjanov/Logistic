@@ -761,7 +761,7 @@ button.cta-button {
 }
 
 button.cta-button:hover {
-    background-color: #0056b3;
+    background-color: #8d8d8d;
 }
 
 /* Contact Information Container Styling */
@@ -800,6 +800,35 @@ button.cta-button:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border: none;
 }
+
+/* Wrap checkbox and text together properly */
+.consent-label-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    text-align: justify;
+    font-size: 0.7rem;
+    color: #555;
+    line-height: 1.4;
+    cursor: pointer;
+  }
+  
+  /* Optional: control checkbox size */
+  .consent-label-wrapper input[type="checkbox"] {
+    margin-top: 4px;
+    transform: scale(1.2);
+  }
+  
+  /* Link styling */
+  .consent-label-wrapper a {
+    color: #343434;
+    text-decoration: underline;
+  }
+  
+  .consent-label-wrapper a:hover {
+    color: #ffca28;
+  }
+  
 
 /* Responsive Adjustments */
 @media (max-width: 968px) {
