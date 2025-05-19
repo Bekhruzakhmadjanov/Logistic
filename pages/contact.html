@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - SavingsBanking</title>
+    <title>Contact Us - BigWillieStyle</title>
     <link rel="stylesheet" href="/css/style.css">
     <!-- Load the Montserrat Font from Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -49,7 +49,7 @@
         <section class="contact-form-info">
             <div class="contact-form-container">
                 <h3>Contact Form</h3>
-                <form action="#" method="post">
+                <form action="https://formspree.io/f/mwpozbla" method="POST">
                     <div class="form-group">
                         <label for="name">Name:</label>
                         <input type="text" id="name" name="name" required>
@@ -66,18 +66,27 @@
                         <label for="message">Message:</label>
                         <textarea id="message" name="message" rows="5" required></textarea>
                     </div>
+                
+                    <!-- ✅ SMS Consent Checkbox -->
                     <div class="form-group consent-group">
                         <label for="sms-consent" class="consent-label-wrapper">
-                          <input type="checkbox" id="sms-consent" name="sms-consent" required>
-                          <span>
-                            By submitting your information, you agree to receive SMS messages from BWS USA. Messages may include service updates, dispatch alerts, appointment scheduling, or time-sensitive notifications. Messaging frequency may vary. Message and data rates may apply. Reply STOP to opt out, or HELP for assistance. 
-                            <a href="/pages/privacy.html" target="_blank">View our Privacy Policy</a> and 
-                            <a href="/pages/disclaimer.html" target="_blank">Terms</a>.
-                          </span>
+                            <input type="checkbox" id="sms-consent" name="sms-consent" required>
+                            <span>
+                                By submitting your information, you agree to receive SMS messages from BWS USA. Messages may include service updates, dispatch alerts, appointment scheduling, or time-sensitive notifications. Messaging frequency may vary. Message and data rates may apply. Reply STOP to opt out, or HELP for assistance. 
+                                <a href="/pages/privacy.html" target="_blank">View our Privacy Policy</a> and 
+                                <a href="/pages/disclaimer.html" target="_blank">Terms</a>.
+                            </span>
                         </label>
-                      </div>
+                    </div>
+                
+                    <!-- ✅ Optional Hidden Fields -->
+                    <input type="hidden" name="_subject" value="New BWS USA Contact Submission">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://bwsusa.net/pages/thank-you.html">
+                
+                    <!-- Submit Button -->
                     <button type="submit" class="cta-button">Send Message</button>
-                </form>
+                </form>                
             </div>
             <div class="contact-info-container">
                 <h3>Contact Information</h3>
