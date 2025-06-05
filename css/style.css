@@ -49,6 +49,7 @@ header.shrink {
 
 
 .header-container {
+    height: 90px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -57,7 +58,8 @@ header.shrink {
 }
 
 .logo img {
-    height: 70px;
+    height: 50px;
+    max-height: 100%;
 }
 
 .nav-links {
@@ -117,6 +119,10 @@ header.shrink {
 
     .burger-menu {
         display: flex;
+    }
+
+    .logo img {
+        height: 40px;
     }
 }
 
