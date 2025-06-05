@@ -811,23 +811,29 @@ button.cta-button:hover {
     color: #555;
     line-height: 1.4;
     cursor: pointer;
-  }
+}
   
-  /* Optional: control checkbox size */
-  .consent-label-wrapper input[type="checkbox"] {
+/* Optional: control checkbox size */
+.consent-label-wrapper input[type="checkbox"] {
     margin-top: 4px;
     transform: scale(1.2);
   }
   
-  /* Link styling */
-  .consent-label-wrapper a {
+/* Link styling */
+.consent-label-wrapper a {
     color: #343434;
     text-decoration: underline;
-  }
+}
   
-  .consent-label-wrapper a:hover {
+.consent-label-wrapper a:hover {
     color: #ffca28;
-  }
+}
+
+.consent-label-wrapper span {
+  display: inline-block;
+  line-height: 1.6;
+  max-width: 100%;
+}
   
 
 /* Responsive Adjustments */
@@ -847,6 +853,23 @@ button.cta-button:hover {
         height: 300px;
     }
 }
+
+@media (max-width: 600px) {
+  .consent-label-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .consent-label-wrapper input[type="checkbox"] {
+    margin: 0 0 10px 0;
+  }
+
+  .consent-label-wrapper span {
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+}
+
 
 @media (max-width: 480px) {
     .contact-intro h2 {
