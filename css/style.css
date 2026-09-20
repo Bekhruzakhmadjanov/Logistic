@@ -57,9 +57,12 @@ header.shrink {
     background-color: #8d8d8d;
 }
 
-.logo img {
-    height: 50px;
-    max-height: 100%;
+.logo a {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap;
 }
 
 .nav-links {
@@ -121,8 +124,8 @@ header.shrink {
         display: flex;
     }
 
-    .logo img {
-        height: 40px;
+    .logo a {
+        font-size: 1.3rem;
     }
 }
 

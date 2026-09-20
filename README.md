@@ -1,9 +1,9 @@
-# Big Willie Style Inc. - Logistics Website 🚛
+# Trucking Company - Logistics Website 🚛
 
 🔗 **Live Site:** [Visit Here](https://bekhruzakhmadjanov.github.io/Logistic/)
 
 ## 📌 About  
-This is the official website for **Big Willie Style Inc.**, a logistics and freight transportation company. It showcases our services, features, and contact information.
+This is the official website for **Trucking Company**, a logistics and freight transportation company. It showcases our services and features.
 
 ## 🛠️ Technologies Used  
 - **HTML** – Structure  
@@ -14,7 +14,6 @@ This is the official website for **Big Willie Style Inc.**, a logistics and frei
 ✔️ Responsive design (works on mobile & desktop)  
 ✔️ Smooth navigation & scrolling  
 ✔️ Service descriptions & company overview  
-✔️ Contact details & modals  
 
 ## 📂 How to Use  
 1. **Clone the Repository**  
